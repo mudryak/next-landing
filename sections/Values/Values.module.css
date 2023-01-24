@@ -1,0 +1,15 @@
+.values {}
+
+.values__title {
+    margin: auto;
+    max-width: 750px;
+    max-height: 161px;
+    margin-bottom: var(--mg-md);
+}
+
+.values__item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--mg-md) 0;
+    border-top: 1px solid var(--grey);
+}

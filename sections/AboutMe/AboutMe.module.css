@@ -1,0 +1,39 @@
+.about_me {}
+
+.about_me__block {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1100px) {
+  .about_me__block {
+    flex-direction: column-reverse;
+  }
+  .about_me__img {
+    min-height: 386px;
+    margin-bottom: 40px;
+  }
+}
+
+.about_me__text {
+  margin-right: 40px;
+}
+
+.about_me__text p {
+  margin-bottom: 40px;
+}
+
+.about_me__buttons {
+  display: flex;
+}
+
+.about_me__buttons button + button {
+  margin-left: 40px;
+}
+
+.about_me__img {
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 360px;
+  max-height: 386px;
+}

@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 0;
+}
+
+.menu__logo {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 17%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu__burger {
+  /* background-image: url('./public/menu/burger.svg'); */
+}
+
+.main_title__block {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-bottom: var(--mg-lg);
+}
+
+.main_title__img_container {
+  width: 100%;
+  max-width: 1160px;
+  min-height: 348px;
+  position: relative;
+}

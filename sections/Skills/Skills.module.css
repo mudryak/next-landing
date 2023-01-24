@@ -1,0 +1,13 @@
+.skills {}
+
+.skill__text > p:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.skill__title {
+  margin: auto;
+  width: 100%;
+  position: relative;
+  max-width: 499px;
+  min-height: 161px;
+}

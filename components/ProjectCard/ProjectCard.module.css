@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  margin-bottom: var(--mg-md);
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
