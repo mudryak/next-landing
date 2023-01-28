@@ -1,0 +1,116 @@
+.menu {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.menu__line {
+  z-index: 1000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__line span {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.menu__btn .menu__icon {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: var(--white);
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  border-radius: 4px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.menu__btn .menu__icon:after,
+.menu__btn .menu__icon:before {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  background: var(--white);
+}
+
+.menu__btn .menu__icon:before {
+  top: -12.4px;
+}
+
+.menu__btn .menu__icon:after {
+  bottom: -12.4px;
+}
+
+.menu_active .menu__icon {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu_active .menu__icon:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+.menu_active .menu__icon:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.menu__list {
+  z-index: 999;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  background-color: var(--black);
+  list-style: none;
+  transition: all .3s;
+  transform: translateY(-1000px);
+}
+
+.menu__list_active {
+  transition: all .3s;
+  transform: translateY(0);
+}
+
+.menu__list li {
+  cursor: pointer;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.menu__list li:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.menu__list li + li {
+  margin-top: 32px;
+}

@@ -6,6 +6,7 @@ import { Skills } from '../sections/Skills/Skills'
 import { Values } from '../sections/Values/Values'
 import { CallMe } from '../sections/CallMe/CallMe'
 import { Img } from '../components/Img/Img'
+import { Menu } from '../components/Menu/Menu'
 
 import cm from '../styles/Home.module.css'
 
@@ -20,18 +21,7 @@ export default function Home() {
       </Head>
       <main className={cm.container}>
         <div className={cm.main}>
-          <menu className={cm.menu}>
-            <span className={cm.menu__logo}>slava senatorov</span>
-            <a className={cm.menu__burger}>
-              <Image
-                src='menu/burger.svg'
-                alt='Menu'
-                width={46}
-                height={32}
-                priority
-              />
-            </a>
-          </menu>
+          <Menu />
           <div className={cm.main_title__block}>
             <Img
               src='main_title.svg'
