@@ -1,13 +1,12 @@
 import React from 'react'
 import cx from 'classnames'
-import { Img } from '../../components/Img/Img'
+import { MAIN_SECTION_IDS } from '../../constants/MAIN_SECTION'
 
 import cm from './Skills.module.css'
 
 export const Skills = () => {
   return (
-    <div className={cx('black_block', cm.skills)}>
-      {/* <Img className={cm.skill__title} src='skill_title.svg' alt='Skill title' fill /> */}
+    <div id={MAIN_SECTION_IDS.SKILLS} className={cx('black_block', cm.skills)}>
       <h2 className='text-center'>Скиллы</h2>
       <div className={cm.skill__text}>
         <h3>Харды</h3>

@@ -1,11 +1,12 @@
 import React from 'react'
 import cx from 'classnames'
+import { MAIN_SECTION_IDS } from '../../constants/MAIN_SECTION'
 
 import cm from './Values.module.css'
 
 export const Values = () => {
   return (
-    <div className={cx('black_block', cm.values)}>
+    <div id={MAIN_SECTION_IDS.VALUES} className={cx('black_block', cm.values)}>
       <h2 className='text-center'>ЦЕННОСТИ</h2>
       <div className={cm.values__item}>
         <h3>Расширяй горизонты</h3>

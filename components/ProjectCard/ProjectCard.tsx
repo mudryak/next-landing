@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Link from 'next/link'
 import cx from 'classnames'
 import { Img } from '../Img/Img'
 
@@ -10,6 +10,7 @@ interface ProjectCard {
   src: string
   description: string
   title: string
+  link: string
 }
 
 export const ProjectCard: React.FC<ProjectCard> = ({
@@ -17,14 +18,15 @@ export const ProjectCard: React.FC<ProjectCard> = ({
   src,
   description,
   title,
+  link,
 }) => {
   return (
-    <div className={cx(cm.card, className)}>
+    <Link href={link} className={cx(cm.card, className)}>
       <Img className={cm.card__img} src={src} alt='Project img' fill />
       <div className={cm.card__text}>
         <h3 className={cm.card__title}>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   )
 }
